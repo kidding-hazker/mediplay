@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000820;
+    font-family: sans-serif, monospace, system-ui;
+}
+
+*::selection {
+    background-color: #f05;
+    color: #ffffff;
+}
+
+header {
+    padding: 20px 30px;
+    background-color: #002260;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header>a {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    text-decoration: none;
+    font-family: sans-serif, monospace, system-ui;
+    color: #fff;
+}
+
+header>a::selection {
+    background-color: transparent;
+    color: #fff;
+}
+
+header>a>svg {
+    margin-right: 30px;
+}
+
+header>div.search {
+    display: flex;
+    align-items: center;
+}
+
+header>div.search>input {
+    padding: 6px;
+    height: 39px;
+    min-width: 400px;
+    font-size: 30px;
+    background-color: #000820;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    font-family: sans-serif, monospace, system-ui;
+}
+
+header>div.search>input:focus {
+    outline: 1px solid #f05;
+}
+
+header>div.search>button {
+    transition: .1s;
+    padding: 0;
+    margin-left: 1px;
+    background-color: #002260;
+    border: none;
+}
+
+header>div.search>button>svg {
+    stroke: #ffffff;
+    stroke-width: 4px;
+    fill: transparent;
+}
+
+header>div.search>button:hover {
+    transition: .1s;
+    background-color: #f05;
+    cursor: pointer;
+}
+
+header>div.search>button:active {
+    transition: .1s;
+    background-color: #903;
+}
+
+header>a.account {
+    margin: 20px;
+    height: 60px;
+    width: 60px;
+    justify-self: flex-start;
+}
+
+header>a.account>svg {
+    transition: .1s;
+    margin: 0;
+    border-radius: 30px;
+    background-color: transparent;
+    fill: #fff;
+}
+
+header>a.account:hover>svg {
+    transition: .1s;
+    background-color: #f05;
+    fill: #fff;
+}
+
+header>a.account:active>svg {
+    transition: .1s;
+    background-color: #903;
+    fill: #fff;
+}
+
+div {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+div.video {
+    display: block;
+    transition: .1s;
+    margin: 30px;
+    padding: 0;
+    width: 400px;
+    height: 300px;
+}
+
+div.video:hover {
+    transition: .1s;
+    background-color: #002260;
+}
+
+div.video>a,
+div.video>a>img {
+    display: flex;
+    padding: 0;
+    width: 400px;
+    height: 200px;
+}
+
+div.video>div>a {
+    padding: 10px;
+    width: 80px;
+    height: 80px;
+}
+div.video>div>a>img {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+}
+
+div.video>div>div {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px 0;
+}
+
+div.video>div>div>a {
+    margin: 0;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 30px;
+    color: #fff;
+}
+
+div.video>div>div>p {
+    margin: 0;
+    font-weight: 300;
+    font-size: 20px;
+    color: #fff;
+}
